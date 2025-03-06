@@ -9,16 +9,40 @@ body{
     overflow: hidden;
 }
 
-/*Styles header*/
-.header-style{
-    width: 99%;
-    height: 20%;
-    background-color: aqua;
-    margin: 0;
-    text-align: center;
-    padding-bottom: 0;
-
+.grid_con{
+   display: grid;
+   grid-template-areas: 
+   "head head head head"
+   "leftcol rightcol rightcol rightcol"
+   "foot foot foot foot"; 
+   border: solid black 1px;
 }
+
+.head{
+    text-align: center;
+    grid-area: head;
+    background-color: aquamarine;
+}
+.leftcol{
+    grid-area: leftcol;
+    background-color: aqua;
+}
+.rightcol{
+    grid-area: rightcol;
+    background-color: gray;
+}
+.foot{
+    grid-area: foot;
+    background-color: aquamarine;
+}
+
+.flex-container{
+    background-color: black;
+    display: flex;
+}
+
+
+/*Styles header*/
 
 /*Styles the return button in the return html*/
 .home-button{
@@ -39,11 +63,7 @@ color: green;
 }
 
 /*Styles title in header*/
-.title{
-    height: 60%;
-    width: 100%;
-    color: white;
-}
+
 
 /*Styles the div that helps format the right and left columns*/
 .body-style{
@@ -69,9 +89,8 @@ color: green;
 
 /*Styles horozontal nav bar*/
 .sub-header{
-    background-color: aquamarine;
+    background-color: grey;
     width:100%;
-    height: 40%;
     border: 3px solid black;
     box-sizing: border-box;
 
@@ -79,11 +98,10 @@ color: green;
 
 /*Styles the tabs in the horozontal nav bar*/
 .header-tabs{
-    float: left;
+    
     text-align: center;
-    width: 10%;
-    height: 100%;
-    background-color: aquamarine;
+    background-color:green;
+    border: solid black 1px;
 
 }
 
@@ -99,24 +117,6 @@ color: green;
 
 }
 
-/*Styles left column*/
-.left-col{
-    width: 25%;
-    height: 40%;
-    float: left;
-    background-color: lightgray;
-
-}
-
-/*Styles right column*/
-.right-col{
-    width: 75%;
-    height: 100%;
-    float:right;
-    background-color: beige;
-    overflow: scroll;
-
-}
 
 /*Styles verticle nav bar*/
 .left-box{
