@@ -1,0 +1,69 @@
+html, body{
+    height: 100%
+}
+
+button{
+    height: 20%;
+}
+
+.title_block{
+    width: 70%;
+    height: 20%;
+    margin: 20px auto;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.input_size{
+    width: 50%;
+    height: 20%;
+}
+
+.txt_cen{
+    margin: 20px auto;
+}
+
+.txt_title{
+    font-size: 32px;
+}
+
+.body_block{
+    width: 70%;
+    height: 20%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.output_block{
+    width: 70%;
+    height: 40%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+}
+
+.left_col{
+    width: 50%;
+    height: 100%;
+    float:left;
+    background-color: aqua;
+    padding: 12px;
+    
+}
+
+.right_col{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    float:left;
+    background-color: rgb(44, 135, 44);
+    padding: 12px;
+}
+
+li{
+    text-align: left;
+}
